@@ -40,3 +40,41 @@ add1(2,3);
 // contains a function definition. Methods are functions stored as object properties. 
 
 
+
+
+function calcartprice(...num1){
+    return num1
+
+}
+console.log(calcartprice(3,5,9))
+
+// scope {}
+
+// let a = 10
+// const b=20
+// var c = 30
+var d = 500
+
+if(true){
+let a = 10
+const b=20
+var c = 30
+
+}
+
+//console.log(a)
+//console.log(b)
+console.log(c)
+
+function one(){
+    const username = "gunjan"
+    function two(){
+        const website="youtube"
+        console.log(username)
+    }
+    //console.log(website)
+    two()
+}
+one()
+
+
