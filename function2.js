@@ -1,0 +1,130 @@
+// function in js
+// block of code that perform a specific task can invoked whenever needed
+
+function myfunction(){
+    console.log("gunjan kumar");
+}
+myfunction(); 
+
+function sum(x,y){
+    console.log(x+y);
+
+}
+sum(8,9);
+
+// function sum2(x,y){
+    
+//     return x+y;
+// }
+// let val=sum(8,7);
+// console.log(val);
+
+// arrow function
+
+const arrowsum=(a,b)=>{
+    console.log(a+b);
+
+}
+
+const arrowmul=(a,b)=>{
+    console.log(a*b);
+
+}
+
+// return count of vowel
+
+// function countVowels(str){
+//     let count=0;
+//     for(const char of str){
+//         if(char==='a'|| char==='e' || char==='i' || char==='o' || char==='u'){
+//             count++;
+//         }
+        
+//     }
+//     return count;
+// }
+// countVowels("gunjankumar")
+
+// for each looop in array
+
+
+// A function is a set of statements that take inputs, 
+// do some specific computation, and produce output. The 
+// idea is to put some commonly or repeatedly done tasks 
+// together and make a function so that instead of writing 
+// the same code again and again for different inputs, 
+// we can call that function. 
+
+// The function is executed when something calls/invokes it.
+// The name may contain letters, digits, dollar signs, and underscore.
+// Parameters are listed inside round parenthesis after the name of the function.
+// Arguments are values a function receives when it is invoked.
+// When the control reaches the return statement, js will stop executing and the value is returned to the caller.
+
+function myfunction(g1, g2){
+    return g1/g2;
+}
+console.log(myfunction(8,2))
+
+//It calls and returns a method with the owner object being the argument.
+
+// function declaration :->  Function Declaration is the traditional way to define a function. It is somehow similar to the way we define a function in other programming languages. We start declaring using the keyword “function”.
+//1. function expression:->Function Expression is another way to define a function in JavaScript. Here we define a function using a variable and store the returned value in that variable.
+// 2. Arrow function:-> Arrow functions are been introduced in the ES6 version of JavaScript. It is used to shorten the code. Here we do not use the “function” keyword and use the arrow symbol.
+
+function add(a,b){
+    console.log(a+b);
+}
+add(2,5);
+
+
+const add1= function(a,b){
+    console.log(a+b)
+}
+add1(2,3);
+
+
+// method
+
+//A JavaScript method is a property of an object that
+// contains a function definition. Methods are functions stored as object properties. 
+
+
+
+
+function calcartprice(...num1){
+    return num1
+
+}
+console.log(calcartprice(3,5,9))
+
+// scope {}
+
+// let a = 10
+// const b=20
+// var c = 30
+var d = 500
+
+if(true){
+let a = 10
+const b=20
+var c = 30
+
+}
+
+//console.log(a)
+//console.log(b)
+console.log(c)
+
+function one(){
+    const username = "gunjan"
+    function two(){
+        const website="youtube"
+        console.log(username)
+    }
+    //console.log(website)
+    two()
+}
+one()
+
+
